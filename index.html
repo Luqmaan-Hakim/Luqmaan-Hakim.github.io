@@ -204,33 +204,45 @@
                               </ul>
                         </div>
                         <div class="col m7 s12">
-                            <div class="card-panel">
-                                <h5>Pleas fill out this form</h5>
-                                <div class="input-field">
-                                    <input type="text" name="name" id="name" >
-                                    <label for="name">Name</label>
+                                <div class="card-panel">
+                                    <h6 class="card-panel center blue-grey white-text alert hide">Thanks for the submit</h6>
+                                    <h5>Pleas fill out this form</h5>
+                                        <form name="submit-to-google-sheet">
+                                            <div class="input-field">
+                                                <input type="text" name="name" id="name" >
+                                                <label for="name">Name</label>
+                                            </div>
+
+                                            <div class="input-field">
+                                                <input type="email" name="email" id="email" class="validate">
+                                                <label for="email">Email</label>
+                                            </div>  
+
+                                            <div class="input-field">
+                                                <input type="text" name="phone" id="phone">
+                                                <label for="phone">Phone    </label>
+                                            </div> 
+
+                                            <div class="input-field">
+                                                <textarea name="message" id="message" class="materialize-textarea"></textarea>
+                                                <label for="message">Message</label>
+                                            </div> 
+
+                                            <button type="submit" class="btn waves-effect waves-light blue-grey lighten-1 tombol-kirim">Send</button>
+
+                                            <div class="progress hide tombol-loading">
+                                                <div class="indeterminate"></div>
+                                            </div>
+
+                                        </form>
                                 </div>
-                                <div class="input-field">
-                                    <input type="email" name="email" id="email" class="validate">
-                                    <label for="email">Email</label>
-                                </div> 
-                                <div class="input-field">
-                                    <input type="text" name="phone" id="phone">
-                                    <label for="phone">Phone    </label>
-                                </div> 
-                                <div class="input-field">
-                                    <textarea name="message" id="message" class="materialize-textarea"></textarea>
-                                    <label for="message">Message</label>
-                                </div> 
-                                <a class="waves-effect waves-light btn blue-grey lighten-1">Send</a> 
-                            </div>
                         </div>
                     </div>
                 </div>
             </section>
     
             <!-- Footer -->
-            <footer class="page-footer blue-grey darken-2">
+            <footer class="page-footer blue-grey darken-2  ">
                 <div class="container">
                     <div class="row">
                         <div class="col s12 center">
@@ -246,8 +258,10 @@
 
       <!--JavaScript at end of body for optimized loading-->
       <script type="text/javascript" src="js/materialize.min.js"></script>
+      <!-- <script src="js/jquery-3.6.2.min.js"></script> -->
       <!-- My JS -->
       <script src="js/script.js"></script>
+      
     </body>
   </html>
         
